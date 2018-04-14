@@ -10,6 +10,6 @@ function videoStills(filename,freq_frames) %Creates the function with 2 paramete
         frames = read(video,i); %Variable set at current frame in the loop.
         imwrite(frames,['frames/Image' int2str(i), '.jpg']); %Writes the image as a jpg files. Needs to be a string so it can be saved.
         im(i) = image(frames); %Displays the frames extracted in Matlab. This is optional.
-        end
+    end
 
 end
